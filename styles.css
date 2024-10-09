@@ -1,0 +1,381 @@
+:root {
+    --purple: #8A2BE2;
+    --light-purple: #9F5FE2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+nav {
+    background-color: var(--purple);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1, h2 {
+    color: var(--purple);
+    margin-bottom: 1rem;
+text-align: center;
+}
+
+/* Carrusel */
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.carousel-prev { left: 0; }
+.carousel-next { right: 0; }
+
+/* Biografía */
+.bio-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Blog */
+.blog-post {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-left: 4px solid var(--purple);
+    background-color: #f9f9f9;
+}
+
+/* Historia del Hardware */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    padding: 1rem;
+    border-left: 2px solid var(--purple);
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: var(--purple);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.timeline-content {
+    padding-right: 20px;
+}
+
+.timeline-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.timeline-links {
+    margin-top: 15px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.timeline-links h4 {
+    color: var(--purple);
+    margin-bottom: 10px;
+}
+
+.timeline-links a {
+    display: block;
+    color: #666;
+    text-decoration: none;
+    margin: 5px 0;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.timeline-links a:hover {
+    color: var(--purple);
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+.timeline-item h3 {
+    color: var(--purple);
+    margin-bottom: 15px;
+}
+
+.info-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.info-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.info-card h3 {
+    color: var(--purple);
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.info-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.info-card li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.info-card li:before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--purple);
+}
+
+.highlight-box {
+    background: var(--purple);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2em;
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+.bio-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.music-section {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.music-title {
+    color: var(--purple);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.music-title i {
+    font-size: 1.5em;
+}
+
+.playlist {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.song-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 60px 1fr auto;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.2s;
+}
+
+.song-card:hover {
+    transform: translateX(5px);
+}
+
+.song-thumbnail {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.song-info h4 {
+    color: var(--purple);
+    margin: 0;
+}
+
+.song-info p {
+    color: #666;
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
+}
+
+.audio-player {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.audio-player audio {
+    width: 100%;
+}
+
+.favorite-music {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+}
+
+.favorite-music h4 {
+    color: var(--purple);
+    margin-bottom: 10px;
+}
+
+.favorite-music ul {
+    list-style: none;
+    padding: 0;
+}
+
+.favorite-music li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.favorite-music li:last-child {
+    border-bottom: none;
+}
+
+
+

@@ -29,6 +29,152 @@
             <p>Mis pensamientos sobre las tendencias actuales en desarrollo web...</p>
         </div>
     </section>
+    <section>
+        <div class="blog-post">
+            <h3>Tutorial de Git: Desde lo Básico hasta Colaboración Remota</h3>
+            <p class="post-date">Fecha: Octubre 2024</p>
+            <p>En este tutorial, aprenderemos los fundamentos de Git, una herramienta esencial para el control de versiones en el desarrollo de software. Cubriremos desde la inicialización de un repositorio local hasta la conexión con un repositorio remoto en GitHub.</p>
+        
+            <div class="info-section">
+                <h3>1. Inicialización del Repositorio Localmente</h3>
+                
+                <p>Para comenzar a usar Git en tu proyecto, primero necesitas inicializar un repositorio local. Sigue estos pasos:</p>
+                <ol>
+                    <li>Abre tu terminal y navega al directorio de tu proyecto.</li>
+                    <li>Ejecuta el siguiente comando:</li>
+                </ol>
+        
+                <div class="info-card">
+                    <div class="code-block">
+                        <pre><code>git init</code></pre>
+                    </div>
+                </div>
+        
+                <p>Este comando crea un nuevo subdirectorio <code>.git</code> que contiene todos los archivos necesarios para el repositorio.</p>
+        
+                <div class="tutorial-image">
+                    <img src="./assets/inicializacion.png" alt="Inicialización de Git" class="tutorial-screenshot" />
+                    <p class="image-caption">Inicialización del repositorio Git</p>
+                </div>
+            </div>
+        
+            <div class="info-section">
+                <h3>2. Creación de Branches</h3>
+                
+                <p>Las ramas (branches) en Git te permiten desarrollar funcionalidades aisladas unas de otras. Aquí te mostramos cómo crearlas y utilizarlas:</p>
+                <ol>
+                    <li>Para crear una nueva rama, usa:</li>
+                </ol>
+        
+                <div class="info-card">
+                    <div class="code-block">
+                        <pre><code>git branch nombre-de-la-rama</code></pre>
+                    </div>
+                </div>
+        
+                <ol start="2">
+                    <li>Para cambiar a la nueva rama:</li>
+                </ol>
+        
+                <div class="info-card">
+                    <div class="code-block">
+                        <pre><code>git checkout nombre-de-la-rama</code></pre>
+                    </div>
+                </div>
+        
+                <ol start="3">
+                    <li>O puedes crear y cambiar a la nueva rama en un solo comando:</li>
+                </ol>
+        
+                <div class="info-card">
+                    <div class="code-block">
+                        <pre><code>git checkout -b nombre-de-la-rama</code></pre>
+                    </div>
+                </div>
+        
+                <h4>Ejemplo Práctico con Merge</h4>
+                <p>Supongamos que estás trabajando en una nueva función llamada "login":</p>
+                <ol>
+                    <li>Crea y cambia a una nueva rama:</li>
+                </ol>
+        
+                <div class="info-card">
+                    <div class="code-block">
+                        <pre><code>git checkout -b feature-login</code></pre>
+                    </div>
+                </div>
+        
+                <ol start="2">
+                    <li>Realiza tus cambios y haz commits en esta rama.</li>
+                    <li>Cuando la función esté lista, vuelve a la rama principal:</li>
+                </ol>
+        
+                <div class="info-card">
+                    <div class="code-block">
+                        <pre><code>git checkout main</code></pre>
+                    </div>
+                </div>
+        
+                <ol start="4">
+                    <li>Fusiona (merge) la rama de la función con la principal:</li>
+                </ol>
+        
+                <div class="info-card">
+                    <div class="code-block">
+                        <pre><code>git merge feature-login</code></pre>
+                    </div>
+                </div>
+        
+                <div class="tutorial-image">
+                    <img src="./assets/proceso merge.webp" alt="Proceso de merge" class="tutorial-screenshot" />
+                    <p class="image-caption">Proceso de merge entre branches</p>
+                </div>
+            </div>
+        
+            <div class="info-section">
+                <h3>3. Agregar un Repositorio Remoto</h3>
+                
+                <p>Para colaborar con otros desarrolladores, necesitas conectar tu repositorio local a uno remoto en GitHub. Sigue estos pasos:</p>
+                <ol>
+                    <li>Crea un nuevo repositorio en GitHub.</li>
+                    <li>En tu repositorio local, agrega el repositorio remoto:</li>
+                </ol>
+        
+                <div class="info-card">
+                    <div class="code-block">
+                        <pre><code>git remote add origin https://github.com/tu-usuario/tu-repositorio.git</code></pre>
+                    </div>
+                </div>
+        
+                <ol start="3">
+                    <li>Verifica que se haya agregado correctamente:</li>
+                </ol>
+        
+                <div class="info-card">
+                    <div class="code-block">
+                        <pre><code>git remote -v</code></pre>
+                    </div>
+                </div>
+        
+                <ol start="4">
+                    <li>Sube tus cambios al repositorio remoto:</li>
+                </ol>
+        
+                <div class="info-card">
+                    <div class="code-block">
+                        <pre><code>git push -u origin main</code></pre>
+                    </div>
+                </div>
+        
+                <div class="tutorial-image">
+                    <img src="./assets/cone.jpg" alt="Conexión con GitHub" class="tutorial-screenshot" />
+                    <p class="image-caption">Conexión con el repositorio remoto en GitHub</p>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>
+    </section>
 
     <footer>
         <p>© 2024 Mi Sitio Personal - Proyecto de Ingeniería en Software y Datos - Manuela Correa</p>

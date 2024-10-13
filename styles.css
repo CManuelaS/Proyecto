@@ -377,5 +377,38 @@ footer {
     border-bottom: none;
 }
 
+/* Estilos para las imágenes del tutorial */
+.tutorial-image {
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
+.tutorial-screenshot {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-caption {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+}
+
+/* Ajustes responsive para las imágenes */
+@media (max-width: 768px) {
+    .tutorial-image {
+        margin: 15px 0;
+    }
+    
+    .image-caption {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+}
 
